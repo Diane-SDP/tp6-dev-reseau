@@ -3,7 +3,6 @@ import asyncio
 global CLIENTS
 CLIENTS = {}
 
-
 async def handle_client_msg(reader, writer):
     addr = writer.get_extra_info('peername')
     firstmsg = False
